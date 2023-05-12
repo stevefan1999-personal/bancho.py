@@ -31,3 +31,6 @@ run:
 
 run-prod:
 	pipenv run ./scripts/start_server.sh
+
+deploy:
+	PIPENV_VENV_IN_PROJECT=1 pipenv install --deploy
